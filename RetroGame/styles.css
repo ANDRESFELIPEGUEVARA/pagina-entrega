@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Press+Start+2P&display=swap');
+* {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #ff0000 #552a2a;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #ffffffe5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    user-select: none; 
+}
+
+header h1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3cqw;
+    display: block;
+    background-color: #8B0000;
+    color: #fff;
+    padding: 20px;
+    transform: translateX(+10px);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+    user-select: none; 
+}
+
+h1:hover {
+    background-color: #7311ac;
+}
+
+header h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: rotate(10deg);
+    transform-origin: top left;
+}
+
+#menu {
+    padding: 10px 10px;
+    background-color: red;
+    border-radius: 20px;
+    z-index: 10;
+    transition: background-color 1s ease, border-radius 1s ease;
+    user-select: none; 
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    user-select: none; 
+}
+
+#menu:hover {
+    background-color: #f523c1c4;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    user-select: none; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    user-select: none; 
+}
+
+nav ul li a {
+    color: #f8f8f8fa;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -1px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    user-select: none; 
+}
+
+a:hover {
+    color: #77ff28
+}
+
+main {
+    position: fixed;
+    bottom: 25%;
+    width: 100%;
+    padding: 20px;
+    color: #ffffffea;
+    text-align: center;
+    user-select: none; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px;
+    color: #ffffff3b;
+    text-align: center;
+    pointer-events: none;
+    user-select: none; 
+}
+
+/* Otras páginas */
+
+button {
+    display: none;
+}
+
+.etiqueta-boton {
+    background-color: #2dff62c4;
+    color: #ffffffea;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, border-radius 0.5s ease, color 0.5s ease-in-out;
+    user-select: none; 
+    font-size: 1.4rem;
+
+}
+
+.etiqueta-boton:hover {
+    background-color: #4bfdfd;
+    color: #333;
+    border-radius: 10px;
+}
+
+form {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#alternarFormulario:checked ~ .etiqueta-boton {
+    display: none;
+}
+
+#alternarFormulario:checked ~ form {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#botonEnviar {
+    background-color: #2dff62c4;
+    color: #ffffffea;
+    border: none;
+    margin-left: 12px;
+    padding: 5px 40px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, border-radius 0.5s ease, color 0.5s ease-in-out;
+    user-select: none; 
+    font-size: 1.2rem;
+}
+input {
+    border: 2px solid #f81e1e;
+    border-radius: 10px;
+}
+label {
+    padding-left: 10px;
+}
+
+#retroceder {
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+textarea {
+    border: 2px solid #f81e1e;
+    border-radius: 10px;
+    resize: none;
+}
+.ppp {
+    color:#97979777;
+}

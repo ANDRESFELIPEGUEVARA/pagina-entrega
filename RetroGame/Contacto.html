@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroArch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RetroGame</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/Nosotros.html">Nosotros</a></li>
+                <li><a href="/Servicio.html">Servicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <input type="checkbox" id="alternarFormulario" style="display: none;">
+        <label for="alternarFormulario" class="etiqueta-boton">CONTACTANOS</label>
+        <form>
+            <label for="alternarFormulario" class="etiqueta-boton" id="retroceder">Retroceder</label>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="50"><br><br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required minlength="10" maxlength="40"></textarea><br><br>
+            <input type="submit" value="Enviar" id="botonEnviar">
+        </form>
+        <p class="ppp">Click para ver el formulario.</p>
+    </main>
+
+    <footer>
+        <p>© Jhoxman & Andres ©</p>
+    </footer>
+
+</body>
+</html>
